@@ -14,21 +14,21 @@
         <h2>Loan request</h2>
         <Form action="blank" method="post">
             <label for="name">Full name</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" placeholder="john doe" pattern="\D+[a-zA-z]{4,}\s*" required>
 
             <label for="email">Email </label>
-            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email" placeholder="johndoe@gmail.com" pattern="\w+([.-]?\w+)*@\w+([.-]?\w+)*\.[a-z]{2,}" required>
 
             <label for="pan">PAN </label>
-            <input type="text" name="pan" id="pan">
+            <input type="text" name="pan" id="pan" placeholder="ABCD1234A" pattern="^[A-Z]{4}[0-9]{4}[A-Z]$" required>
 
             <label for="lamt">Loan Amount </label>
-            <input type="text" name="lamt" id="lamt">
+            <input type="number" name="lamt" id="lamt" placeholder="10000" min="0" max="100000000" required>
 
             <label for="cpt">Captcha: </label>
             <div>
                 <canvas id="mycaptcha"></canvas> 
-                <input type="text" name="cpt" id="cpt">
+                <input type="number" name="cpt" id="cpt">
             </div>
             
             <Button type="submit">submit</Button>       
