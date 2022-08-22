@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <Section>
+        <h2>Loan request</h2>
+        <Form action="blank" method="post">
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email </label>
+            <input type="text" name="email" id="email">
+
+            <label for="pan">PAN </label>
+            <input type="text" name="pan" id="pan">
+
+            <label for="lamt">Loan Amount </label>
+            <input type="text" name="lamt" id="lamt">
+
+            <label for="cpt">Captcha: </label>
+            <div>
+                <canvas id="captcha" ></canvas> 
+                <input type="text" name="cpt" id="cpt">
+            </div>
+            
+            <Button type="submit">submit</Button>       
+        </Form>
+
+    </Section>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
