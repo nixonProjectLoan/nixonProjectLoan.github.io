@@ -12,7 +12,7 @@
     
     <Section>
         <h2>Loan request</h2>
-        <Form action="blank" method="post">
+        <Form action="/thankyou.html" method="put">
             <label for="name">Full name</label>
             <input type="text" name="name" id="name" placeholder="john doe" pattern="\D+[a-zA-z]{4,}\s*" required>
 
@@ -28,13 +28,13 @@
             <label for="cpt">Captcha: </label>
             <div>
                 <canvas id="mycaptcha"></canvas> 
-                <input type="number" name="cpt" id="cpt">
+                <input type="number" name="cpt" id="cpt" placeholder="solve the math problem" required>
             </div>
             
             <Button type="submit">submit</Button>       
         </Form>
 
     </Section>
-    <script src="/scripts/script.js"></script>
+    <script src="/scripts/index.js"></script>
 </body>
 </html>
