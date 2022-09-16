@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/thanku.css">
 </head>
 <body>
-    <header>Thank you!</header>
-    <p>Your request for loan appliction is recieved</p>
-    <div id="write"></div>
-    <label for="otp">otp
-    </label>
-    <input type="text" name="otp" id="otp">
+    <div>
+    Dear <span id="fname"></span> ,<br>
+    Thank you for your inquiry. A 4 digit verification number has been sent to your email: <span id="email"></span>,<br>
+    please enter it in the following box and submit for confirmation:
+    </div>
+    <form action="" target="_self">
+        <label for="otp">OTP:</label>
+        <input type="text" name="otp" id="otp" pattern="\W[0-9]{4}" maxlength="4" required>
+        <button type="submit">submit</button>
+    </form>
     
+
     <script src="/scripts/thanku.js"></script>
 </body>
 </html>
